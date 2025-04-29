@@ -1,25 +1,30 @@
 # pycache-wipe
 
-**pycache-wipe** is a lightweight, production-ready Python utility that helps you keep your project directories clean by safely and efficiently deleting all `__pycache__` folders.
+![pycache-wipe Logo](https://pypi.org/static/images/logo-small.8998e9d1.svg)
 
-These `__pycache__` folders are generated automatically by Python to store bytecode-compiled files. Over time, they can clutter your workspace and may not be necessary to keep in production or deployment environments.
+---
+
+**Simple, safe, and fast .pyc / __pycache__ folder cleaner.**
+
+`pycache-wipe` is a lightweight Python utility that recursively finds and safely deletes `__pycache__` directories and `.pyc`/`.pyo` files from a project. It's designed for developers who want an easy way to clean up their repositories without accidentally deleting important source files.
 
 ---
 
 ## Features
 
-- 🌊 **Simple & Intuitive CLI**: Minimal commands with clear flags.
-- 🔒 **Safe Deletion**: Only targets `__pycache__` directories, nothing else.
-- 🔄 **Two Modes**: Choose between local (current directory) deletion or recursive deletion.
-- 🌟 **Robust Error Handling**: Graceful failure and informative messages.
+- Recursively deletes `__pycache__` folders.
+- Removes `.pyc` and `.pyo` files.
+- Safe deletion with dry-run option.
+- Works on Linux, MacOS, and Windows.
+- Tiny, fast, and dependency-free.
 
 ---
 
 ## Installation
 
-Install via pip:
+Install from PyPI:
 
-```
+```bash
 pip install pycache-wipe
 ```
 
@@ -27,42 +32,67 @@ pip install pycache-wipe
 
 ## Usage
 
-### Delete all `__pycache__` folders **recursively** (in current and subdirectories):
+Clean current directory recursively:
 
-```
-pycache-wipe -r
-```
-
-### Delete only the `__pycache__` folder **in the current directory**:
-
-```
-pycache-wipe -l
+```bash
+pycache-wipe
 ```
 
----
+Clean a specific folder:
 
-## Example Output
-
+```bash
+pycache-wipe /path/to/your/project
 ```
-Recursively deleting all __pycache__ directories...
-✅ Deleted: /your/project/path/__pycache__
-✅ Deleted: /your/project/path/submodule/__pycache__
-🎉 Finished pycache-wipe operation.
+
+Run in dry-run mode (preview what would be deleted):
+
+```bash
+pycache-wipe --dry-run
+```
+
+Force confirmation off:
+
+```bash
+pycache-wipe --yes
+```
+
+Show help menu:
+
+```bash
+pycache-wipe --help
 ```
 
 ---
 
 ## Why Use pycache-wipe?
 
-- Keep your project folder clean.
-- Reduce unnecessary clutter before committing to version control.
-- Easily integrate into deployment or CI/CD scripts.
-- No more manual deletion!
+- Keep your repositories clean.
+- Remove unnecessary build artifacts.
+- Save disk space.
+- Simplify preparing a project for version control or distribution.
 
 ---
 
 ## License
 
-MIT License
+MIT License. See `LICENSE` file for details.
 
+---
+
+## Contributing
+
+Pull requests are welcome! If you find a bug or have a feature request, feel free to open an issue.
+
+---
+
+## Author
+
+Maintained by [DatadudeDev](https://github.com/datadudedev).
+
+---
+
+## Project Links
+
+- [PyPI](https://pypi.org/project/pycache-wipe/)
+- [Source Code](https://github.com/yourusername/pycache-wipe)
 
