@@ -87,7 +87,7 @@ Pull requests are welcome! If you find a bug or have a feature request, feel fre
 
 ## Author
 
-Maintained by [yourusername](https://github.com/yourusername).
+Maintained by [DatadudeDev](https://github.com/datadudedev).
 
 ---
 
