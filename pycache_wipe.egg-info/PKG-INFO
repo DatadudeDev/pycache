@@ -1,3 +1,11 @@
+Metadata-Version: 2.2
+Name: pycache-wipe
+Version: 1.0.0
+Summary: Simple utility to delete __pycache__ folders.
+Author-email: Gabriel Stanier <support@datadude.dev>
+License: MIT
+Description-Content-Type: text/markdown
+
 # pycache-wipe
 
 **pycache-wipe** is a lightweight, production-ready Python utility that helps you keep your project directories clean by safely and efficiently deleting all `__pycache__` folders.

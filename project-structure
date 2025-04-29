@@ -1,0 +1,6 @@
+pycache-wipe/
+├── pyproject.toml
+├── README.md
+└── pycache_wipe/
+    ├── __init__.py
+    └── main.py
